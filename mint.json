@@ -50,9 +50,10 @@
         {
     "group": "Management",
       "pages": [
-        "introduction",
-        "quickstart",
-        "installation"
+        "manage-contacts",
+        "manage-templates",
+        "manage-services"
+
       ]
     }
   ],

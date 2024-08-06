@@ -1,4 +1,42 @@
 ---
 title: 'Manage Templates'
-description: 'Description of your new file.'
+description: 'Manage your email templates'
 ---
+
+## Building Email Templates
+Templates are key to creating reusable and personalized emails. Here's a step-by-step guide:
+
+![template](/images/contact-group.png)
+
+
+#### Design Your Template: 
+Use mustache syntax to define placeholders for your variables. These placeholders will be replaced with actual values when the email is sent.
+
+
+#### Define Variables (Placeholders):
+In a dedicated area (like a text box), list your variables separated by commas. These will be used to populate the email content.
+
+
+#### Write Your Email Content:
+Use an online editor to craft the HTML code for your email. This editor provides a familiar experience to what you'd have on your computer.
+
+### Benefits of the templates:
+Reusable Templates: Save time by creating templates you can use for multiple emails.
+Personalized Content: Personalize emails by inserting dynamic values into the template.
+Easy Editing: The online editor simplifies creating and editing your email's HTML code.
+
+### Improvements:
+Clearer structure and breakdown of steps. Replaced jargon with simpler terms ("placeholders" instead of "mustache template syntax"). Explained the benefits of using templates. Added a bulleted list summarizing the advantages.
+
+Templates are playing a major role. You need to design your template carefully. You need to place your variables as mustache template syntax. After creating template details, you may start to update the HTML codes using onli editor.
+
+Now first, you need to create template details with placeholders
+You will put these variables into placeholders' textarea separating with comma. The system will replace your values before sending the email.
+
+After creating a template, you may start to update the HTML codes of the email. Online editor gives you the same working at your computer.
+
+## Sensitive Placeholders
+Placeholders are the variables in your email templates. You need to set the variable names while creating your templates. By default, all placeholders are saving to audit log table to review or resend. If you're sending a sensitive information and not wanting to save to the database, you should put your variable name in sebsitive placeholder textbox.
+
+## Email Template and Variables
+The application allows you to create and update email templates online. First, you need to create a template record before updating HTML. After adding the placeholders into template mode, you may start to update the template. The template page has a highlighting editor.
