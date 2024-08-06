@@ -2,3 +2,60 @@
 title: 'Installation'
 description: ''
 ---
+
+## Requirements
+
+uniquemailer is built with Laravel framework. The current release is based on Laravel v11. All server requirements are the same as with Laravel.
+
+* PHP 8.3 or higher
+* Laravel 11 or higher
+* Redis
+* MySQL 5.7 or higher
+
+We highly recomend you to use Redis for cache and queue support.
+
+
+## Installation
+The installation is same as an usual Laravel software.
+
+Clone or download the repository to your server:
+
+```shell
+git clone https://github.com/uniquemailer/application.git
+```
+
+or download latest release from: Github releases
+
+Run composer to install dependecies
+
+```shell
+composer install
+```
+
+Update application permissions
+
+```shell
+chmod -R 755 storage
+chown -R www-data:www-data storage
+```
+
+
+Create a database in your mysql or mariadb and migration tool and populate the database with sample data
+
+```shell
+php artisan migrate:refresh --seed  
+```
+
+Now your application is ready to run. Browse to your website and login with following credentials:
+
+> username: test@example.com  
+> password: password
+
+
+## Configuration
+
+You need to update the environment variables in `.env` file. You will find this file at the root of the application.
+
+All of the configuration files for the Laravel framework are stored in the config directory. You may get more details by visiting the URL below: Laravel configuration page
+
+The current version is only supporting SMTP option. The new mail driver are on the way. You may setup the mail driver using settings page.
