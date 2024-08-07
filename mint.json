@@ -21,10 +21,7 @@
       "url": "mailto:hello@uniquemailer.com"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
+
   "tabs": [
     {
       "name": "API Reference",
