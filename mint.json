@@ -47,19 +47,23 @@
         "installation"
       ]
     },
-        {
-    "group": "Management",
+    {
+      "group": "Management",
       "pages": [
         "manage-contacts",
         "manage-templates",
         "manage-services"
-
+      ]
+    },
+    {
+      "group": "Management",
+      "pages": [
+        "api",
+        "auditing-emails"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/uniquemailer"
   }
 }

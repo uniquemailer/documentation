@@ -1,0 +1,66 @@
+---
+title: 'API Token'
+description: 'Manage the API keys'
+---
+
+## Generating API Token
+
+Communication with your application and system is based on API. We're using API Token to protect the software. You need to generate your API Key from the Settings page. Don't forget to copy the key after you generated it.
+
+
+![generating API Token](/images/generate-api-key.png)
+
+The above image is a very good example of usage. It's using a special template. The system will choose the right template designed for this service and update the variables using a template placeholder.
+
+
+## API Endpoints
+
+The software has two API endpoints. You may choose a product to send the email or you may choose a template. If you will send a notification or announcement, choosing a template will be a better choice.
+
+```
+/api/services/{SERVICE_SLUG}/send
+```
+
+Listing all registed services
+
+```
+/api/services
+```
+
+Single service with template placeholders
+
+```
+/api/services/{SERVICE_SLUG}/show
+```
+
+Get all templates:
+
+```
+/api/templates
+```
+
+All sent emails
+
+```
+/api/audit/emails
+```
+
+Both API URL is token-based protected. You must send this token in the Authorization header when making requests to protected resources:
+
+```
+Authorization: Bearer {$token}
+```
+
+## Working with API
+
+Each template or product page also shows you a presentation of the JSON body with an example. While creating API clients, will give you a start point.
+
+```
+{
+    "customer_name": "John Doe",
+    "order_numver": "ABC101010101",
+    "serial_key": "5555-5555-5555-5555"
+}
+```
+As you see that, both API must have email and transaction_id entries in the first part of the JSON body. If you choose a product, you should provide the SKU of the product. If you'll use a directly template, you need to enter template ID.
+
