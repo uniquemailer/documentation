@@ -2,16 +2,16 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Unique Mailer",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/images/logo.png",
+    "light": "/images/logo.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#e11d48",
     "light": "#07C983",
-    "dark": "#0D9373",
+    "dark": "#e11d48",
     "anchors": {
-      "from": "#0D9373",
+      "from": "#e11d48",
       "to": "#07C983"
     }
   },
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "group": "Management",
+      "group": "API & Auditing",
       "pages": [
         "api",
         "auditing-emails"
