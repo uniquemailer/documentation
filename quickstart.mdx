@@ -7,7 +7,7 @@ description: 'Start building awesome documentation in under 5 minutes'
 
 Please refer to [installation documention](/installation)
 
-## Create your first template
+### Create your first template
 
 To start working on Mailer, you must create at least one template. You may start to define the placeholders aka—variables in your template. There are two kinds on variables
 
@@ -25,7 +25,7 @@ The following screenshot shows sharp differences between public and private vari
 
 We may also add the email title, HTML and TEXT template.&#x20;
 
-## Update the contact list
+### Update the contact list
 
 If you have a pre-defined list of email addresses that you frequently send emails to, you can streamline your process by creating a contact group. This will allow you to easily target a specific group of recipients without needing to manually input each email address into your API call.
 
@@ -49,6 +49,28 @@ If you have a pre-defined list of email addresses that you frequently send email
 
 By leveraging contact groups, you can simplify your email sending process and ensure that your messages reach the right people.
 
+### Creating a Service to Send Your Emails
 
+Once you've designed your email template, the next step is to create a service. This service will collect the necessary data and deliver your emails to the specified inboxes.
 
-## &#x20;
+**To create a service, follow these steps:**
+
+1. **Choose Your Email Format:**
+
+   * **HTML:** Ideal for rich, visually appealing emails with images, formatting, and links.
+
+   * **Text:** Suitable for plain-text emails, often used for simple notifications or updates.
+
+2. **Define Your Contact Groups:**
+
+   * Specify the groups of recipients you want to target with your emails. You can create multiple groups based on different criteria (e.g., customer segments, location, interests).
+
+**After configuring these settings, the system will generate a unique URL for your API endpoint.**
+
+**To send emails using this endpoint:**
+
+1. **Generate an API Token:** Obtain an API token from your account settings.
+
+2. **Make API Calls:** Use the generated API URL and your token to make API calls, providing the necessary data (e.g., recipient list, email content) for each email you want to send.
+
+**By following these steps, you can effectively automate your email sending process and deliver your messages to the right people at the right time.**
